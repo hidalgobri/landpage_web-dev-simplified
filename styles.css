@@ -1,0 +1,141 @@
+*{
+    margin: 0px;
+    font-family: 'Quicksand', sans-serif; 
+}
+
+.grid{
+    display: grid;
+    gap: 20px;
+    grid-template-columns: repeat(6, 1fr);
+    grid-template-areas: ". content content content content .";
+    justify-items: center;
+    
+}
+/*HEADER*/
+.logo
+{
+    max-width: 50px;
+    margin-right: 1em;
+}
+
+.content_header{
+    grid-area: content;
+    max-width: 1000px;
+    width: 100%;
+    
+}
+
+.brand{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 1rem; 
+
+}
+/*Dark header*/
+.dark_header{
+    background-color: #005681;
+    color: white;
+    position: relative;
+    z-index: 1;
+}
+
+.title{
+    text-align: center;
+    font-size: 4rem;
+    margin: 4rem;
+}
+
+.subtitle, .icon_title{
+    text-align: center;
+    font-weight: 100;
+    margin: 1rem;
+}
+
+.dark_header_divider{
+    background-image: url("images/dark-background.svg");
+    background-size: cover;
+    background-position: bottom left;
+    height: 150px;
+    margin-top: -2px;
+    position: relative;
+    z-index: 1;
+    
+    
+}
+
+/*Light header/email section*/
+.light_header{
+    background-color: #00AAFF;
+    margin-top: -500px;
+    padding-top: 500px;
+}
+
+.ligth_header_divider{
+    background-image: url("images/light-background.svg");
+    height: 150px;
+    background-size: cover;
+    margin-top: -3rem;
+}
+
+
+.f_email, .f_submit{
+    font-size: xx-large;
+}
+
+.f_email{
+    width: 60%;
+      
+}
+.f_submit{
+    width: 30%;
+}
+/*Video section*/
+
+.video_section{
+    display: flex;
+    margin: 5rem 0rem;
+}
+.video{
+    max-width: 25rem;
+    padding-right: 2rem;
+}
+.video_details_content{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+.video_details{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+    
+}
+.icon{
+    width: 2rem;
+    height: 2rem;
+}
+
+/*Details section*/
+.details_section{
+    display: flex;
+    gap: 3rem;
+    margin: 5rem 0rem;
+
+}
+.details{
+    text-align: center;
+
+}
+.details h2{
+    padding-bottom: 1rem;
+}
+
+
+@media (max-width: 766px){
+    .video_section, .details_section {
+        flex-direction: column;
+        align-items: center;
+    }
+ 
+}
